@@ -23,37 +23,12 @@
     </head>
     <body>
         <header>
-            <div class="container header-top white-bg flex flex-jc-sb">
-                <div class="mobile-menu m-down-only flex flex-ai-c">
+            <div class="container header-top white-bg flex flex-jc-sb xs-flex-jc-c">
+                <div class="header-left flex flex-ai-c xs-flex-column s-flex-column">
                     <a
-                        class="mobile-menu-button"
-                        href="#"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            stroke-width="2"
-                            stroke="currentColor"
-                            fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <path
-                                stroke="none"
-                                d="M0 0h24v24H0z"
-                                fill="none"
-                            />
-                            <path d="M4 6l16 0" />
-                            <path d="M4 12l16 0" />
-                            <path d="M4 18l16 0" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="header-left flex flex-ai-c">
-                    <div class="logo">
-                        <a
                             href="#"
                             title="Home Link"
+                            class="logo"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -78,21 +53,16 @@
                                         font-weight="800"
                                         transform="translate(85 29)"
                                     >
-                                        <tspan
-                                            x="0"
-                                            y="0"
-                                        >
+                                        <tspan x="0" y="0">
                                             BETA
                                         </tspan>
                                     </text>
                                 </g>
                             </svg>
                         </a>
-                    </div>
-                    <div class="sub-menu-button xs-hide s-hide">
-                        <a
+                    <a
                             href="#"
-                            class="flex flex-ai-c text-bold sub-menu-button-link"
+                            class="flex flex-ai-c text-bold sub-menu-button-link sub-menu-button"
                         >
                             Inventory
                             <svg
@@ -108,36 +78,45 @@
                                 <path d="M6 9l6 6l6 -6"></path>
                             </svg>
                         </a>
-                    </div>
-                    <nav class="header-nav flex xs-hide s-hide">
-                        <a
-                            href="#"
-                            class="nav-link active flex flex-ai-c text-medium"
-                        >
-                           Products
-                        </a>
-                        <a
-                            href="#"
-                            class="nav-link flex flex-ai-c text-medium"
-                        >
-                            Reviews
-                        </a>
-                        <a
-                            href="#"
-                            class="nav-link flex flex-ai-c text-medium"
-                        >
-                            Requests
-                        </a>
-                        <a
-                            href="#"
-                            class="nav-link flex flex-ai-c text-medium"
-                        >
-                            Appointments
-                        </a>
+                    <nav class="header-nav flex">
+                        <ul class="menu-ul flex">
+                            <li class="flex flex-ai-c nav-link active">
+                                <a
+                                    href="#"
+                                    class="main-nav-link text-medium flex flex-ai-c"
+                                >
+                                   Products
+                                </a>
+                            </li>
+                            <li class="flex flex-ai-c nav-link">
+                                <a
+                                    href="#"
+                                    class="main-nav-link text-medium flex flex-ai-c"
+                                >
+                                    Reviews
+                                </a>
+                            </li>
+                            <li class="flex flex-ai-c nav-link">
+                                <a
+                                    href="#"
+                                    class="main-nav-link text-medium flex flex-ai-c"
+                                >
+                                    Requests
+                                </a>
+                            </li>
+                            <li class="flex flex-ai-c nav-link">
+                                <a
+                                    href="#"
+                                    class="main-nav-link text-medium flex flex-ai-c"
+                                >
+                                    Appointments
+                                </a>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
-                <div class="header-right flex flex-ai-c">
-                    <div class="header-user-name text-medium xs-hide s-hide">
+                <div class="header-right flex flex-ai-c xs-absolute s-absolute xs-flex-column-reverse s-flex-column-reverse s-flex-jc-c xs-flex-jc-c">
+                    <div class="header-user-name text-medium">
                         Volkswagen
                     </div>
                     <div class="header-user-card flex flex-jc-c flex-ai-c text-bold">
@@ -148,35 +127,43 @@
                     </div>
                 </div>
             </div>
-            <div class="header-bottom container navy-800-bg xs-hide s-hide">
+            <div class="header-bottom container navy-800-bg">
                 <nav class="sub-nav flex">
-                    <a
-                        href="#"
-                        class="sub-nav-link white-text active flex flex-ai-c text-medium"
-                    >
-                        All
-                    </a>
-                    <a
-                        href="#"
-                        class="sub-nav-link white-text flex flex-ai-c text-medium"
-                    >
-                        Groups
-                    </a>
-                    <a
-                        href="#"
-                        class="sub-nav-link white-text flex flex-ai-c text-medium"
-                    >
-                        Segments
-                    </a>
+                    <ul class="menu-ul flex">
+                        <li class="sub-nav-li active flex flex-ai-c">
+                            <a
+                                href="#"
+                                class="sub-nav-link text-medium flex flex-ai-c"
+                            >
+                                All
+                            </a>
+                        </li>
+                        <li class="sub-nav-li flex flex-ai-c">
+                            <a
+                                href="#"
+                                class="sub-nav-link text-medium flex flex-ai-c"
+                            >
+                                Groups
+                            </a>
+                        </li>
+                        <li class="sub-nav-li flex flex-ai-c">
+                            <a
+                                href="#"
+                                class="sub-nav-link text-medium flex flex-ai-c"
+                            >
+                                Segments
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </header>
-        <div class="container content">
-            <div class="content-top flex flex-ai-c flex-jc-sb">
-                <div class="main-title text-medium">
+        <main class="container content">
+            <section class="content-header flex flex-ai-c flex-jc-sb xs-flex-column">
+                <h1 class="main-title text-medium">
                     Products
-                </div>
-                <div class="top-content-options flex xs-hide s-hide">
+                </h1>
+                <div class="top-content-options flex">
                     <a
                         class="button tertiary-button flex flex-jc-c flex-ai-c"
                         href="#"
@@ -221,922 +208,1030 @@
                         </svg>
                         Export
                     </a>
-                    <div class="primary-button button flex flex-ai-c flex-jc-sb">
+                    <a class="primary-button button flex flex-ai-c flex-jc-sb">
                         + Add product
-                    </div>
+                    </a>
                 </div>
-            </div>
-            <div class="content-body">
-                <div class="standard-table white-bg">
-                    <div class="standard-table-top">
-                        <div class="standard-table-header flex flex-jc-sb">
-                            <div class="button secondary-button flex flex-ai-c flex-jc-c">
-                                <svg
-                                     xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 94.000000 94.000000"
-                                     preserveAspectRatio="xMidYMid meet"
-                                >
-                                    <g
-                                        transform="translate(0.000000,94.000000) scale(0.100000,-0.100000)"
-                                        stroke="none"
-                                    >
-                                        <path d="M50 675 l0 -35 415 0 415 0 0 35 0 35 -415 0 -415 0 0 -35z"/>
-                                        <path d="M190 435 l0 -35 280 0 280 0 0 35 0 35 -280 0 -280 0 0 -35z"/>
-                                        <path d="M380 193 l0 -33 90 0 90 0 0 33 0 32 -90 0 -90 0 0 -32z"/>
-                                    </g>
-                                </svg>
-                                Filters
-                            </div>
-                            <div class="standard-table-top-pagination flex flex-ai-c flex-jc-c">
-                                <span class="text-medium">1-30</span>
-                                of
-                                <span class="text-medium">30,521</span>
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-headings text-medium">
-                            <div class="standard-table-title single-line-clamp table-image-title">
-                                Image
-                            </div>
-                            <div class="standard-table-title single-line-clamp table-product-title">
-                                Title
-                            </div>
-                            <div class="standard-table-title single-line-clamp table-product-id-title flex flex-ai-c">
-                                Product ID
-                                <a class="order-button">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="2"
-                                        stroke="currentColor"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="table-svg"
-                                    >
-                                        <path stroke="none"
-                                              d="M0 0h24v24H0z"
-                                              fill="none"
-                                        />
-                                        <path d="M12 5l0 14" />
-                                        <path d="M16 15l-4 4" />
-                                        <path d="M8 15l4 4" />
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="standard-table-title single-line-clamp table-product-category-title">
-                                Category
-                            </div>
-                            <div class="standard-table-title single-line-clamp table-rating-title">
-                                Rating
-                            </div>
-                            <div class="standard-table-title single-line-clamp text-align-right table-price-title">
-                                Price
-                            </div>
-                        </div>
-                    </div>
-                    <div class="standard-table-bottom">
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Mauris imperdiet orci mauris, pellentesque tincidunt mauris ultrices vitae
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Aliquam ultrices, mi ut tristique molestie, justo mauris aliquam ligula, nec congue mi neque ac nibh tincidunt sed nunc
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Vestibulum arcu est, semper a augue quis, placerat finibus lacus
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Aenean faucibus elit vel orci gravida egestas
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Quisque urna purus, tristique a neque in, ultricies eleifend lectus
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data grey-100-bg flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-content standard-table-data flex-ai-c">
-                            <div class="table-product-image">
-                                <div class="image-placeholder"></div>
-                            </div>
-                            <div class="table-product-title single-line-clamp">
-                                <a href="#">
-                                    Donec - Viverra vitae quam eu venenatis
-                                </a>
-                            </div>
-                            <div class="table-product-id single-line-clamp">
-                                1
-                            </div>
-                            <div class="table-product-category single-line-clamp">
-                                Men's Clothing
-                            </div>
-                            <div class="table-product-rating single-line-clamp">
-                                3.9 (120)
-                            </div>
-                            <div class="table-product-price single-line-clamp text-align-right">
-                                £109.95
-                            </div>
-                        </div>
-                        <div class="standard-table-footer flex flex-jc-e flex-ai-c s-flex-jc-c xs-flex-jc-c">
-                            <a
-                                    class="pagination-button pagination-inactive flex flex-ai-c flex-jc-c"
-                                    href="#"
+            </section>
+            <section class="content-table">
+                <div class="tabular-data-table-container">
+                    <div class="tabular-data-top white-bg flex flex-jc-sb flex-ai-c">
+                        <a
+                            href="#"
+                            class="button secondary-button flex flex-ai-c flex-jc-c"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 94 94"
                             >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    fill="none"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <path
-                                        stroke="none"
-                                        d="M0 0h24v24H0z"
-                                        fill="none"
-                                    />
-                                    <path d="M7 6v12" />
-                                    <path d="M18 6l-6 6l6 6" />
-                                </svg>
-                            </a>
-                            <a
-                                class="pagination-button pagination-inactive flex flex-ai-c flex-jc-c inner-pagination-button"
-                                href="#"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    fill="none"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <path
-                                        stroke="none"
-                                        d="M0 0h24v24H0z"
-                                        fill="none"
-                                    />
-                                    <path d="M15 6l-6 6l6 6" />
-                                </svg>
+                                <path d="M5 27v3h83v-7H5v4zM19 51v3h56v-7H19v4zM38 75v3h18v-6H38v3z"/>
+                            </svg>
+                            Filters
+                        </a>
 
-                            </a>
-                            <span class="xs-hide">
-                                Page
-                            </span>
-                            <input
-                                type="text"
-                                value="1"
-                                class="pagination-input text-align-center"
-                            />
-                            <span class="xs-hide">
-                                of 1017
-                            </span>
-                            <a
-                                    class="pagination-button flex flex-ai-c flex-jc-c inner-pagination-button"
-                                    href="#"
+                        <p>
+                            <b>1-30</b> of <b>30,531</b>
+                        </p>
+
+                    </div>
+                    <table class="tabular-data-table">
+                        <thead>
+                            <tr>
+                                <td class="tabular-data-header-cell img-cell first-cell">
+                                    <p class="tabular-data-p">
+                                        Image
+                                    </p>
+                                </td>
+                                <td class="tabular-data-header-cell title-cell">
+                                    <p class="tabular-data-p">
+                                        Title
+                                    </p>
+                                </td>
+                                <td class="tabular-data-header-cell product-id-cell">
+                                    <p class="tabular-data-p">
+                                        Product ID
+                                    </p>
+                                </td>
+                                <td class="tabular-data-header-cell category-cell">
+                                    <p class="tabular-data-p">
+                                        Category
+                                    </p>
+                                </td>
+                                <td class="tabular-data-header-cell rating-cell">
+                                    <p class="tabular-data-p">
+                                        Rating
+                                    </p>
+                                </td>
+                                <td class="tabular-data-header-cell text-align-right price-cell end-cell">
+                                    <p class="tabular-data-p">
+                                        Price
+                                    </p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Lorem ipsum dolor sit amet - Consectetur adipiscing elit
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Praesent convallis sem nunc - Ut commodo magna porttitor non
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        In efficitur lobortis dui vel gravida
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>1
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>Men's Clothing
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>3.9 (120)
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p>&pound;109.95
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Maecenas enim nunc tempor ac ullamcorper ac - Consequat in eros tempor ac ullamcorper
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>1
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>Men's Clothing
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>3.9 (120)
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p>&pound;109.95
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>1
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>Men's Clothing
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>3.9 (120)
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p>&pound;109.95
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>1
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>Men's Clothing
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>3.9 (120)
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p>&pound;109.95
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>1
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>Men's Clothing
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>3.9 (120)
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p>&pound;109.95
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>1
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>Men's Clothing
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>3.9 (120)
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p>&pound;109.95
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>1
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>Men's Clothing
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>3.9 (120)
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p>&pound;109.95
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>1
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>Men's Clothing
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>3.9 (120)
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p>&pound;109.95
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>1
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>Men's Clothing
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>3.9 (120)
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p>&pound;109.95
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>1
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>Men's Clothing
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>3.9 (120)
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p>&pound;109.95
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>1
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>Men's Clothing
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>3.9 (120)
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p>&pound;109.95
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row alt-bg">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>1
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>Men's Clothing
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p>3.9 (120)
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p>&pound;109.95
+                                </td>
+                            </tr>
+                            <tr class="tabular-data-row">
+                                <td class="tabular-data-cell first-cell">
+                                    <div class="img-placeholder"></div>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <a href="#">
+                                        Example Product Title
+                                    </a>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        1
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        Men's Clothing
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell">
+                                    <p class="tabular-data-p">
+                                        3.9 (120)
+                                    </p>
+                                </td>
+                                <td class="tabular-data-cell text-align-right end-cell">
+                                    <p class="tabular-data-p">
+                                        &pound;109.95
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="tabular-data-bottom white-bg flex flex-ai-c flex-jc-e s-flex-jc-c xs-flex-jc-c">
+                        <a
+                            class="pagination-button pagination-inactive flex flex-ai-c flex-jc-c"
+                            href="#"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none" stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
                             >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    fill="none"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <path
-                                        stroke="none"
-                                        d="M0 0h24v24H0z"
-                                        fill="none"
-                                    />
-                                    <path d="M9 6l6 6l-6 6" />
-                                </svg>
-                            </a>
-                            <a
-                                    class="pagination-button flex flex-ai-c flex-jc-c"
-                                    href="#"
+                                <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                />
+                                <path d="M7 6v12M18 6l-6 6 6 6"/>
+                            </svg>
+                        </a>
+                        <a
+                            class="pagination-button pagination-inactive flex flex-ai-c flex-jc-c inner-pagination-button"
+                            href="#"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
                             >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="2"
-                                    stroke="currentColor"
-                                    fill="none"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <path
-                                        stroke="none"
-                                        d="M0 0h24v24H0z"
-                                        fill="none"
-                                    />
-                                    <path d="M6 6l6 6l-6 6" />
-                                    <path d="M17 5v13" />
-                                </svg>
-                            </a>
-                        </div>
+                                <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                />
+                                <path d="m15 6-6 6 6 6"/>
+                            </svg>
+                        </a>
+                        Page
+                        <input
+                            type="number"
+                            value="1"
+                            class="pagination-input text-align-center"
+                        />
+                        of 1017
+                        <a
+                            class="pagination-button flex flex-ai-c flex-jc-c inner-pagination-button"
+                            href="#"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                />
+                                <path d="m9 6 6 6-6 6"/>
+                            </svg>
+                        </a>
+                        <a
+                            class="pagination-button flex flex-ai-c flex-jc-c"
+                            href="#"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                />
+                                <path d="m6 6 6 6-6 6M17 5v13"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
+            </section>
+        </main>
+        <footer class="white-bg container flex flex-jc-sb flex-ai-c xs-flex-column">
+            <div class="footer-logo">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 26.1 32"
+                >
+                    <path
+                        fill="#040138"
+                        d="m19.7 0-10 32h6.5l10-32Z"
+                    />
+                    <path
+                        fill="#040138"
+                        d="M14.2 32 4.5 0H6l9.7 31.6-1.5.4ZM12 32 2.2 0h1.6l9.6 31.6-1.4.4Zm-2.2 0L0 0h1.6l9.6 31.6-1.4.4Z"
+                    />
+                </svg>
             </div>
-        </div>
-        <footer class="white-bg">
-            <div class="container footer-content flex flex-jc-sb flex-ai-c xs-flex-column">
-                <div class="footer-logo">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 26.1 32"
-                    >
-                        <path
-                            fill="#040138"
-                            d="m19.7 0-10 32h6.5l10-32Z"
-                            data-name="Path 12189"
-                        />
-                        <path
-                            fill="#040138"
-                            d="M14.2 32 4.5 0H6l9.7 31.6-1.5.4ZM12 32 2.2 0h1.6l9.6 31.6-1.4.4Zm-2.2 0L0 0h1.6l9.6 31.6-1.4.4Z"
-                            data-name="Subtraction 28"
-                        />
-                    </svg>
-                </div>
-                <div class="footer-links flex flex-jc-c flex-ai-c xs-flex-wrap xs-flex-jc-fs s-flex-wrap s-flex-jc-fs">
-                    <a
-                        href="#"
-                        class="footer-link"
-                    >
+            <ul class="footer-links menu-ul flex flex-jc-c flex-ai-c xs-flex-wrap xs-flex-jc-fs s-flex-wrap s-flex-jc-fs">
+                <li class="footer-link">
+                    <a href="#">
                         Terms &amp; conditions
                     </a>
-                    <a
-                        href="#"
-                        class="footer-link"
-                    >
+                </li>
+                <li class="footer-link">
+                    <a href="#">
                         Help
                     </a>
-                    <a
-                        href="#"
-                        class="footer-link"
-                    >
+                </li>
+                <li class="footer-link">
+                    <a href="#">
                         FAQ
                     </a>
-                    <a
-                        href="#"
-                        class="footer-link"
-                    >
+                </li>
+                <li class="footer-link">
+                    <a href="#">
                         Privacy
                     </a>
-                    <a
-                        href="#"
-                        class="footer-link"
-                    >
+                </li>
+                <li class="footer-link">
+                    <a href="#">
                         Cookies
                     </a>
-                    <a
-                        href="#"
-                        class="footer-link"
-                    >
+                </li>
+                <li class="footer-link">
+                    <a href="#">
                         Knowledge
                     </a>
-                    <a
-                        href="#"
-                        class="footer-link"
-                    >
+                </li>
+                <li class="footer-link">
+                    <a href="#">
                         Feature hub
                     </a>
-                    <a
-                        href="#"
-                        class="footer-link"
-                    >
+                </li>
+                <li class="footer-link">
+                    <a href="#">
                         Documents
                     </a>
-                    <a
-                        href="#"
-                        class="footer-link"
-                    >
+                </li>
+                <li class="footer-link">
+                    <a href="#">
                         Templates
                     </a>
-                </div>
-                <div class="footer-copyright text-medium">
-                    &copy; Visualsoft 2023
-                </div>
+                </li>
+            </ul>
+            <div class="footer-copyright text-medium">
+                &copy; Visualsoft 2023
             </div>
         </footer>
     </body>
